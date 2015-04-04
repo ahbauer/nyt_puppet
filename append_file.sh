@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PY_DIR = $1
-OUT_FILE = $2
+PY_DIR=$1
+OUT_FILE=$2
 
 PY=$PY_DIR/python
 
