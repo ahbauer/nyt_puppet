@@ -16,7 +16,7 @@ def main():
     json_file.close()
     os.remove(logfilename)
     
-    outfile = open(sys.argv[2], 'a')
+    outfile = open(sys.argv[1], 'a')
     if len(json_data['response']['docs']) == 0:
         outfile.write( '{0}: No documents received!\n'.format(datetime.datetime.now()) )
     else:
