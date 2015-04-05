@@ -21,7 +21,7 @@ def main():
         outfile.write( '{0}: No documents received!\n'.format(datetime.datetime.now()) )
     else:
         article = json_data['response']['docs'][0]
-        outfile.write( '{2}: The most recent article published on NYTimes.com is "{1}", publication date {0}\n'.format(article['pub_date'], article['headline']['main'], datetime.datetime.now()) )
+        outfile.write( '{2}: The most recent article published on NYTimes.com is "{1}", publication date {0}\n<br>\n'.format(article['pub_date'], article['headline']['main'], datetime.datetime.now()) )
     outfile.close()
 
 if __name__ == '__main__':
